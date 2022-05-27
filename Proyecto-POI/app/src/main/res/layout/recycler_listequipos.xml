@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="2sp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:paddingVertical="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/ciFotoGrupo"
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/saturn"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rlNombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="22:33pm"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                tools:text="Don panchiro" />
+
+            <TextView
+                android:id="@+id/rlHora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="11:59"
+                android:textAlignment="textEnd"
+                android:textColor="#575757"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/rlQuien"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="3"
+                android:textAlignment="textEnd"
+                android:textColor="#575757"
+                android:textSize="13dp"
+                tools:text="Richard:" />
+
+            <TextView
+                android:id="@+id/rlMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="#575757"
+                android:textSize="13dp"
+                tools:text="Hola, como te a ido? todo bien?" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

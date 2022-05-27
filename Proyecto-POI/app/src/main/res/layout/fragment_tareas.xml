@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Tareas">
+
+    <LinearLayout
+        android:id="@+id/BusquedaTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/Busqueda"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+
+            android:background="#DFDDDD"
+
+            android:drawableLeft="@drawable/loupe"
+            android:drawablePadding="15dp"
+            android:gravity="start"
+            android:hint="Buscar"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+
+            android:textColor="@color/black"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/aceptarBusqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_effect_text"
+            android:text="Aceptar"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAssignments"
+        app.layout_costraintBottom_toBottomOf="@id/BusquedaTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BusquedaTareas"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/recycler_listassignments" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
